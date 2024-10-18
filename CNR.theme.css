@@ -1,0 +1,189 @@
+/**
+* @name SimpsonTheme
+* @author Ailton501
+* @version 1.0
+* @description Tema inspirado en Los Simpson
+* @website [Tu Sitio Web]
+*/
+
+
+:root {
+  /*
+    Imagen de fondo temática de Los Simpson
+  */
+  --theme-background-image: url(https://scontent.fmex28-1.fna.fbcdn.net/v/t39.30808-6/452556018_1907594096357945_8992540676374270606_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=536f4a&_nc_eui2=AeFiFtLlNCpAfQ52FGmC_NmDpq3jAUSfbwOmreMBRJ9vA-AvxTrWXk725q93a3CPwvjXWEr2hxRdX5BY6ujHmwqL&_nc_ohc=6oSqmrPbmVEQ7kNvgEtZma6&_nc_zt=23&_nc_ht=scontent.fmex28-1.fna&_nc_gid=AV81w-obPYWyOFgYFTVejWq&oh=00_AYCl4GAGO458eHgOBUQ1txJkZmV-_dFV2tZa8HsM7u_SgA&oe=67179E5A); /* Imagen de fondo de la ciudad de Springfield */
+  --theme-background-size: cover;
+  --theme-background-position: center;
+
+  /*
+    Color principal del tema
+  */
+  --main-theme-color: rgb(255, 217, 15); /* Amarillo Simpson */
+
+  /*
+    Transparencia general del tema
+  */
+  --theme-transparency: rgba(0, 0, 0, 0.7);
+
+  /*
+    Icono personalizado para el botón de inicio (la casa de Los Simpson)
+  */
+  --home-icon-image: url(https://noir-dexprkr.github.io/lcdh-index/icon-dark.png); /* Imagen de la casa de Los Simpson */
+  --home-icon-image-position: center center;
+  --home-icon-image-zoom: 100%;
+
+  /*
+    Anchura de la lista de servidores
+  */
+  --server-listing-width: 73px;
+
+  /*
+    Tamaño de fuente
+  */
+  --font-size: 100%;
+
+  /*
+    Colores de las menciones
+  */
+  --mention-color: rgba(250, 166, 26, 0.05); /* Naranja, similar a la camiseta de Bart */
+  --mention-sider: rgba(250, 166, 26, 1);
+  --mention-hover-color: rgba(250, 166, 26, 0.08);
+
+  /*
+    Colores al pasar el cursor sobre una categoría de servidor
+  */
+  --category-hover-color: rgb(60, 202, 138); /* Verde, como el césped del jardín de Los Simpson */
+
+  /*
+    Animación para servidores no leídos
+  */
+  --unread-server-animation: none;
+
+  /*
+    Botones de vídeo y compartir pantalla
+  */
+  --video-screen-button-background-color: rgba(255, 217, 15, 0.2); /* Amarillo Simpson */
+  --video-screen-button-foreground-color: white;
+  --video-screen-button-background-hovor-color: rgba(255, 217, 15, 0.4);
+  --video-screen-button-foreground-hovor-color: white;
+
+  /*
+    Color del título de los roles
+  */
+  --member-listing-role-color: var(--main-theme-color);
+
+  /*
+    Pequeña ventana de usuario
+  */
+  --small-user-popout-background-image: var(--theme-background-image);
+  --small-user-popout-background-transparency: rgba(0, 0, 0, 0.6);
+  --small-user-popout-background-image-position: center;
+
+  /*
+    Ventana grande de usuario
+  */
+  --big-user-popout-background-image: var(--theme-background-image);
+  --big-user-popout-background-transparency: rgba(0, 0, 0, 0.6);
+  --big-user-popout-background-image-position: center;
+
+  /*
+    Código
+  */
+  --code-markup-background-color: rgba(0, 0, 0, 0.6);
+  --code-markup-border: 1px solid transparent;
+
+  /*
+    Transparencia del cuadro de mensajes
+  */
+  --message-box-transparency: rgba(0, 0, 0, 0.6);
+
+  /*
+    Transparencia del fondo de incrustaciones
+  */
+  --embed-background-transparency: rgba(0, 0, 0, 0.6);
+
+  /*
+    Botones que aparecen al pasar el cursor sobre los mensajes
+  */
+  --message-hover-buttons-background: rgba(200, 200, 200, 0.1);
+
+  /*
+    Transparencia del menú contextual
+  */
+  --context-menu-transparency: rgba(15, 15, 15, 0.8);
+
+  /*
+    Icono de añadir servidor/descubrimiento
+  */
+  --add-discover-icon-transparency: rgba(255, 217, 15, 0.15);
+  --add-discover-icon-color: #ffdd1e; /* Amarillo característico */
+
+  /*
+    Color del número límite de canales
+  */
+  --channel-limit-count-color: var(--channels-default);
+  --channel-limit-background-left: rgba(200, 200, 200, 0.1);
+  --channel-limit-background-right: rgba(200, 200, 200, 0.2);
+
+  /*
+    Colores de la barra de desplazamiento
+  */
+  --scrollbar-color: rgba(200, 200, 200, 0.2);
+
+  /*
+    Divisor de mensajes no leídos
+  */
+  --unread-message-divider-color: #f04747; /* Rojo intenso */
+  --unread-message-divider-font-color: #fff;
+
+  /*
+    Barra de nuevos mensajes
+  */
+  --new-messages-bar-background-color: #ffdd1e; /* Amarillo Simpson */
+  --new-messages-bar-font-color: #000; /* Texto negro */
+  
+  /*
+    Colores del menú de emojis
+  */
+  --emoji-menu-background-color: rgba(0, 0, 0, 0.6);
+  --emoji-menu-sider-background-color: rgba(0, 0, 0, 0);
+  --emoji-menu-server-header-background-color: rgba(0, 0, 0, 0.8);
+  --emoji-menu-bottom-bar-background-color: black;
+  --emoji-menu-search-bar-background-color: rgba(200, 200, 200, 0.1);
+
+  /*
+    Búsqueda de mensajes
+  */
+  --message-search-menu-background-color: rgba(0, 0, 0, 0.8);
+  --message-search-container-background-color: rgba(0, 0, 0, 0.6);
+  --message-search-result-background-color: rgba(200, 200, 200, 0.05);
+
+  /*
+    Colores de los canales
+  */
+  --text-voice-channel-color: rgb(142, 146, 151);
+  --text-voice-channel-hover-color: #dcddde;
+  --text-voice-channel-selected-text-color: #fff;
+  --unread-text-channel-color: #fff;
+  --unread-text-channel-bubble-color: var(--main-theme-color);
+
+  /*
+    Carpetas de servidores
+  */
+  --folder-background-color: #2f3136;
+  --expanded-folder-background-color: transparent;
+
+  /*
+    Reacciones
+  */
+  --reaction-emoji-background-color: rgba(0, 0, 0, 0);
+  --reaction-emoji-border-color: 1px solid transparent;
+  --reaction-emoji-hover-background-color: rgba(255, 255, 255, 0.1);
+  --reaction-emoji-hover-border-color: rgba(255, 255, 255, 0.2);
+}
+
+body {
+  background-image: var(--theme-background-image);
+  background-size: var(--theme-background-size);
+  background-position: var(--theme-background-position);
+}
